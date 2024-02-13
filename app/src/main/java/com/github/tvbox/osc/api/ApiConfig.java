@@ -79,7 +79,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://github.com/z8r7/jiekou/blame/main/%E5%85%A8%E7%BD%91%E4%BB%93%E5%BA%93.txt");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
